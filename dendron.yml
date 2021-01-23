@@ -1,0 +1,13 @@
+version: 1
+vaults:
+    -
+        fsPath: vault
+useFMTitle: true
+site:
+    copyAssets: true
+    siteHierarchies:
+        - root
+    siteRootDir: docs
+    usePrettyRefs: true
+    title: Dendron
+    siteUrl: https://kirubhakaran12.github.io
