@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>Python - Dendron</title>
+  <title>Sftp - Dendron</title>
   
 
   <link
@@ -41,22 +41,22 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://kirubhakaran12.github.io/notes/94d22889-250f-4114-8296-eb6f9e69c713.html">
+<link rel="canonical" href="https://kirubhakaran12.github.io/notes/2080b9bc-3850-4b02-aba3-2022083e85ff.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://kirubhakaran12.github.io/notes/94d22889-250f-4114-8296-eb6f9e69c713.html">
+<meta property="og:url" content="https://kirubhakaran12.github.io/notes/2080b9bc-3850-4b02-aba3-2022083e85ff.html">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://kirubhakaran12.github.ioundefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/94d22889-250f-4114-8296-eb6f9e69c713.html">
+<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/2080b9bc-3850-4b02-aba3-2022083e85ff.html">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://kirubhakaran12.github.ioundefined">
 
 
-  <meta property="og:title" content="Python - Dendron" />
-  <meta name="twitter:title" content="Python - Dendron" />
+  <meta property="og:title" content="Sftp - Dendron" />
+  <meta name="twitter:title" content="Sftp - Dendron" />
   
 </head>
 
@@ -129,7 +129,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item">Python</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io/notes\326ca73e-5fc5-49ef-936e-ddcf8f1e0f29.html">Python</a></li><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io/notes\80c6d985-cbac-43ea-a2bc-a3de630e048e.html">Utils</a></li><li class="breadcrumb-nav-list-item">Sftp</li></ol>
           </nav>
         
       
@@ -145,10 +145,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Python">
+    <meta itemprop="headline" content="Sftp">
     
-    <meta itemprop="datePublished" content="2021-01-26T16:10:40+00:00">
-    <meta itemprop="dateModified" content="2021-01-26T16:10:40+00:00">
+    <meta itemprop="datePublished" content="2021-01-26T18:19:41+00:00">
+    <meta itemprop="dateModified" content="2021-01-26T18:19:41+00:00">
 
     <div class="page__inner-wrap">
       
@@ -158,14 +158,20 @@
 
         
 
-        <h1 id="python"><a aria-hidden="true" class="anchor-heading" href="#python"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Python</h1><span id="navId" data="94d22889-250f-4114-8296-eb6f9e69c713"></span>
-<hr>
-<h2 class="text-delta">Table of contents</h2>
-<ul>
-<li>
-<a href="https://kirubhakaran12.github.io/notes\80c6d985-cbac-43ea-a2bc-a3de630e048e.html">Utils</a>
-</li>
-</ul>
+        <h1 id="sftp"><a aria-hidden="true" class="anchor-heading" href="#sftp"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sftp</h1>
+<p>CnOpts - A connection options object, used for passing extended options to the Connection</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> pysftp <span class="token keyword">import</span> CnOpts<span class="token punctuation">,</span> Connection
+connection_opts <span class="token operator">=</span> CnOpts<span class="token punctuation">(</span><span class="token punctuation">)</span>
+connection_opts<span class="token punctuation">.</span>hostkeys <span class="token operator">=</span> <span class="token boolean">None</span>
+conn <span class="token operator">=</span> Connection<span class="token punctuation">(</span>
+        host<span class="token operator">=</span><span class="token string">"&#x3C;hostname>"</span><span class="token punctuation">,</span>
+        username<span class="token operator">=</span><span class="token string">"&#x3C;user>"</span><span class="token punctuation">,</span>
+        password<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">,</span>
+        <span class="token comment">#private_key=private_key_object,</span>
+        cnopts<span class="token operator">=</span>connection_opts<span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+</code></pre><span id="navId" data="2080b9bc-3850-4b02-aba3-2022083e85ff"></span>
+
 
 
                 
