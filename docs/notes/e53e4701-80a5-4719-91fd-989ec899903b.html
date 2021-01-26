@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>Root - Dendron</title>
+  <title>Sftp - Dendron</title>
   
 
   <link
@@ -41,22 +41,22 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://kirubhakaran12.github.io/">
+<link rel="canonical" href="https://kirubhakaran12.github.io/notes/e53e4701-80a5-4719-91fd-989ec899903b.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://kirubhakaran12.github.io/">
+<meta property="og:url" content="https://kirubhakaran12.github.io/notes/e53e4701-80a5-4719-91fd-989ec899903b.html">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://kirubhakaran12.github.ioundefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://kirubhakaran12.github.io/">
+<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/e53e4701-80a5-4719-91fd-989ec899903b.html">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://kirubhakaran12.github.ioundefined">
 
 
-  <meta property="og:title" content="Root - Dendron" />
-  <meta name="twitter:title" content="Root - Dendron" />
+  <meta property="og:title" content="Sftp - Dendron" />
+  <meta name="twitter:title" content="Sftp - Dendron" />
   
 </head>
 
@@ -127,6 +127,12 @@
     </div>
     <div id="main-content-wrap" class="main-content-wrap">
       
+        
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io/notes\94d22889-250f-4114-8296-eb6f9e69c713.html">Python</a></li><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io/notes\80c6d985-cbac-43ea-a2bc-a3de630e048e.html">Utils</a></li><li class="breadcrumb-nav-list-item">Sftp</li></ol>
+          </nav>
+        
+      
       <div id="main-content" class="main-content" role="main">
 
         
@@ -139,10 +145,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Root">
+    <meta itemprop="headline" content="Sftp">
     
-    <meta itemprop="datePublished" content="2021-01-23T13:54:56+00:00">
-    <meta itemprop="dateModified" content="2021-01-23T13:54:56+00:00">
+    <meta itemprop="datePublished" content="2021-01-26T16:10:40+00:00">
+    <meta itemprop="dateModified" content="2021-01-26T16:10:40+00:00">
 
     <div class="page__inner-wrap">
       
@@ -152,25 +158,20 @@
 
         
 
-        <h1 id="root"><a aria-hidden="true" class="anchor-heading" href="#root"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Root</h1>
-<h1 id="welcome-to-dendron"><a aria-hidden="true" class="anchor-heading" href="#welcome-to-dendron"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Welcome to Dendron</h1>
-<p>This is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. </p><span id="navId" data="root"></span>
-<hr>
-<h2 class="text-delta">Table of contents</h2>
-<ul>
-<li>
-<a href="https://kirubhakaran12.github.io/notes\e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html">Quickstart</a>
-</li>
-<li>
-<a href="https://kirubhakaran12.github.io/notes\aa2c1c96-2972-4d50-9c9a-7e6c776722e3.html">DBT</a>
-</li>
-<li>
-<a href="https://kirubhakaran12.github.io/notes\94d22889-250f-4114-8296-eb6f9e69c713.html">Python</a>
-</li>
-<li>
-<a href="https://kirubhakaran12.github.io/notes\c51cb2f4-1dba-495d-a501-7cfac7ce55e4.html">Spark</a>
-</li>
-</ul>
+        <h1 id="sftp"><a aria-hidden="true" class="anchor-heading" href="#sftp"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sftp</h1>
+<p>CnOpts - A connection options object, used for passing extended options to the Connection</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> pysftp <span class="token keyword">import</span> CnOpts<span class="token punctuation">,</span> Connection
+connection_opts <span class="token operator">=</span> CnOpts<span class="token punctuation">(</span><span class="token punctuation">)</span>
+connection_opts<span class="token punctuation">.</span>hostkeys <span class="token operator">=</span> <span class="token boolean">None</span>
+conn <span class="token operator">=</span> Connection<span class="token punctuation">(</span>
+        host<span class="token operator">=</span><span class="token string">"&#x3C;hostname>"</span><span class="token punctuation">,</span>
+        username<span class="token operator">=</span><span class="token string">"&#x3C;user>"</span><span class="token punctuation">,</span>
+        password<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">,</span>
+        <span class="token comment">#private_key=private_key_object,</span>
+        cnopts<span class="token operator">=</span>connection_opts<span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+</code></pre><span id="navId" data="e53e4701-80a5-4719-91fd-989ec899903b"></span>
+
 
 
                 

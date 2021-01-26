@@ -8,6 +8,9 @@
         },
         {
             "path": "..\\data-hub"
+        },
+        {
+            "path": "..\\dbt-demo"
         }
     ],
     "settings": {
@@ -20,7 +23,9 @@
         "editor.snippetSuggestions": "inline",
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggest.showSnippets": true,
-        "editor.tabCompletion": "on"
+        "editor.tabCompletion": "on",
+        "php.validate.executablePath": "",
+        "python.autoComplete.extraPaths": []
     },
     "extensions": {
         "recommendations": [
