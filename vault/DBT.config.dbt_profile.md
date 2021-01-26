@@ -25,7 +25,7 @@ clean-targets: [directorypath]
 
 query-comment: string
 
-require-dbt-version: version-range | [version-range]
+require-dbt-version: version-range 
 
 quoting:
   database: true | false
