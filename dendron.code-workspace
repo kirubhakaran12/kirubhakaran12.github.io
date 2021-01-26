@@ -2,6 +2,12 @@
     "folders": [
         {
             "path": "vault"
+        },
+        {
+            "path": "..\\datahub-refinery"
+        },
+        {
+            "path": "..\\data-hub"
         }
     ],
     "settings": {
