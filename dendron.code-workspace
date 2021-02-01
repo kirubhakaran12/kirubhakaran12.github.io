@@ -11,6 +11,9 @@
         },
         {
             "path": "..\\dbt-demo"
+        },
+        {
+            "path": "..\\retail-data-refinery"
         }
     ],
     "settings": {
@@ -25,7 +28,11 @@
         "editor.suggest.showSnippets": true,
         "editor.tabCompletion": "on",
         "php.validate.executablePath": "",
-        "python.autoComplete.extraPaths": []
+        "python.autoComplete.extraPaths": [],
+        "databricks.workspaceConfiguration": {
+            "workspaceGuid": "a641c365-a73c-2120-b392-3384182f8c1c",
+            "lastActiveConnection": "Staging"
+        }
     },
     "extensions": {
         "recommendations": [

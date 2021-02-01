@@ -1,0 +1,31 @@
+
+#### Regions
+
+A set of data centers that are close enough to each other that it doesn't matter which datacenter your data is in. Latency is the time it takes for the data to travel
+
+#### Availability Zones
+
+Within a region and each zone has its own separate power, cooling and networking. Used for protecting data from failures. There are at least three availability zones per regions.
+
+#### Resource Groups
+
+* Container for resource that need to be managed as a group.
+* Each resource can only exist in one resource group.
+* Resource can be moved from one resource group to another.
+* Resource can be from multipl regions.
+* Can be used for access control
+* Resource can interact with resources in other groups
+* A resource group needs a location though it is not an actual resource in order to store metadata .
+
+#### Azure Resource Manager(ARM)
+
+- Deployment and management services for Azure.
+- Interaction with any resources will go through ARM.
+
+    ##### Benefits
+    - Group resource handling
+    - Consistency(use any tool powershell, cli, portal etc for consitent result)
+    - Dependencies - Define dependencies between resources
+    - Access Control - Easy to assign access rights
+    - Tagging - label individual resources
+    - Billing
