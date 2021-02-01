@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>DBT - Dendron</title>
+  <title>Azure - Dendron</title>
   
 
   <link
@@ -41,22 +41,22 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://kirubhakaran12.github.io/notes/9ac174a4-4f82-47a8-a564-90bed7789abd.html">
+<link rel="canonical" href="https://kirubhakaran12.github.io/notes/9f51467a-758a-4904-99aa-d7aca15622ee.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://kirubhakaran12.github.io/notes/9ac174a4-4f82-47a8-a564-90bed7789abd.html">
+<meta property="og:url" content="https://kirubhakaran12.github.io/notes/9f51467a-758a-4904-99aa-d7aca15622ee.html">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://kirubhakaran12.github.ioundefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/9ac174a4-4f82-47a8-a564-90bed7789abd.html">
+<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/9f51467a-758a-4904-99aa-d7aca15622ee.html">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://kirubhakaran12.github.ioundefined">
 
 
-  <meta property="og:title" content="DBT - Dendron" />
-  <meta name="twitter:title" content="DBT - Dendron" />
+  <meta property="og:title" content="Azure - Dendron" />
+  <meta name="twitter:title" content="Azure - Dendron" />
   
 </head>
 
@@ -129,7 +129,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item">DBT</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io/notes\d89b8251-4ba2-459b-ab1c-d7f1939b5c85.html">Cloud</a></li><li class="breadcrumb-nav-list-item">Azure</li></ol>
           </nav>
         
       
@@ -145,10 +145,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="DBT">
+    <meta itemprop="headline" content="Azure">
     
-    <meta itemprop="datePublished" content="2021-02-01T23:13:47+00:00">
-    <meta itemprop="dateModified" content="2021-02-01T23:13:47+00:00">
+    <meta itemprop="datePublished" content="2021-02-01T23:16:39+00:00">
+    <meta itemprop="dateModified" content="2021-02-01T23:16:39+00:00">
 
     <div class="page__inner-wrap">
       
@@ -158,14 +158,40 @@
 
         
 
-        <h1 id="dbt"><a aria-hidden="true" class="anchor-heading" href="#dbt"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>DBT</h1><span id="navId" data="9ac174a4-4f82-47a8-a564-90bed7789abd"></span>
-<hr>
-<h2 class="text-delta">Table of contents</h2>
+        <h1 id="azure"><a aria-hidden="true" class="anchor-heading" href="#azure"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Azure</h1>
+<h4 id="regions"><a aria-hidden="true" class="anchor-heading" href="#regions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Regions</h4>
+<p>A set of data centers that are close enough to each other that it doesn't matter which datacenter your data is in. Latency is the time it takes for the data to travel</p>
+<h4 id="availability-zones"><a aria-hidden="true" class="anchor-heading" href="#availability-zones"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Availability Zones</h4>
+<p>Within a region and each zone has its own separate power, cooling and networking. Used for protecting data from failures. There are at least three availability zones per regions.</p>
+<h4 id="resource-groups"><a aria-hidden="true" class="anchor-heading" href="#resource-groups"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Resource Groups</h4>
+<ul>
+<li>Container for resource that need to be managed as a group.</li>
+<li>Each resource can only exist in one resource group.</li>
+<li>Resource can be moved from one resource group to another.</li>
+<li>Resource can be from multipl regions.</li>
+<li>Can be used for access control</li>
+<li>Resource can interact with resources in other groups</li>
+<li>A resource group needs a location though it is not an actual resource in order to store metadata .</li>
+</ul>
+<h4 id="azure-resource-managerarm"><a aria-hidden="true" class="anchor-heading" href="#azure-resource-managerarm"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Azure Resource Manager(ARM)</h4>
 <ul>
 <li>
-<a href="https://kirubhakaran12.github.io/notes\752e9afb-a9e3-4859-b770-66372e19d538.html">Config</a>
+<p>Deployment and management services for Azure.</p>
 </li>
+<li>
+<p>Interaction with any resources will go through ARM.</p>
+<h5 id="benefits"><a aria-hidden="true" class="anchor-heading" href="#benefits"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Benefits</h5>
+<ul>
+<li>Group resource handling</li>
+<li>Consistency(use any tool powershell, cli, portal etc for consitent result)</li>
+<li>Dependencies - Define dependencies between resources</li>
+<li>Access Control - Easy to assign access rights</li>
+<li>Tagging - label individual resources</li>
+<li>Billing</li>
 </ul>
+</li>
+</ul><span id="navId" data="9f51467a-758a-4904-99aa-d7aca15622ee"></span>
+
 
 
                 

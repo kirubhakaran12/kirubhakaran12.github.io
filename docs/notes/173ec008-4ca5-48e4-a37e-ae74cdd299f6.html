@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>Spark - Dendron</title>
+  <title>Powershell - Dendron</title>
   
 
   <link
@@ -41,22 +41,22 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://kirubhakaran12.github.io/notes/b8687be2-a77b-499e-8765-3e96a96a8422.html">
+<link rel="canonical" href="https://kirubhakaran12.github.io/notes/173ec008-4ca5-48e4-a37e-ae74cdd299f6.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://kirubhakaran12.github.io/notes/b8687be2-a77b-499e-8765-3e96a96a8422.html">
+<meta property="og:url" content="https://kirubhakaran12.github.io/notes/173ec008-4ca5-48e4-a37e-ae74cdd299f6.html">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://kirubhakaran12.github.ioundefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/b8687be2-a77b-499e-8765-3e96a96a8422.html">
+<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/173ec008-4ca5-48e4-a37e-ae74cdd299f6.html">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://kirubhakaran12.github.ioundefined">
 
 
-  <meta property="og:title" content="Spark - Dendron" />
-  <meta name="twitter:title" content="Spark - Dendron" />
+  <meta property="og:title" content="Powershell - Dendron" />
+  <meta name="twitter:title" content="Powershell - Dendron" />
   
 </head>
 
@@ -129,7 +129,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item">Spark</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io/notes\276aff64-4cb6-4375-aa88-37c2dc0ef8eb.html">Scripting</a></li><li class="breadcrumb-nav-list-item">Powershell</li></ol>
           </nav>
         
       
@@ -145,10 +145,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Spark">
+    <meta itemprop="headline" content="Powershell">
     
-    <meta itemprop="datePublished" content="2021-02-01T23:13:47+00:00">
-    <meta itemprop="dateModified" content="2021-02-01T23:13:47+00:00">
+    <meta itemprop="datePublished" content="2021-02-01T23:16:39+00:00">
+    <meta itemprop="dateModified" content="2021-02-01T23:16:39+00:00">
 
     <div class="page__inner-wrap">
       
@@ -158,30 +158,40 @@
 
         
 
-        <h1 id="spark"><a aria-hidden="true" class="anchor-heading" href="#spark"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Spark</h1>
-<h3 id="spark-basics"><a aria-hidden="true" class="anchor-heading" href="#spark-basics"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Spark Basics</h3>
-<p><b>SparkContext</b> - tells Spark how to access a cluster
-<b>SparkSparkConfContext</b> - contains information about application</p>
-<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> pyspark <span class="token keyword">import</span> SparkContext<span class="token punctuation">,</span> SparkConf
-
-conf <span class="token operator">=</span> SparkConf<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>setAppName<span class="token punctuation">(</span>appName<span class="token punctuation">)</span><span class="token punctuation">.</span>setMaster<span class="token punctuation">(</span>master<span class="token punctuation">)</span>
-sc <span class="token operator">=</span> SparkContext<span class="token punctuation">(</span>conf<span class="token operator">=</span>conf<span class="token punctuation">)</span>
-</code></pre>
-<p>master -  Spark, Mesos or YARN cluster URL</p>
-<h3 id="launching-ushing-shell"><a aria-hidden="true" class="anchor-heading" href="#launching-ushing-shell"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Launching ushing shell</h3>
-<pre class="language-sh"><code class="language-sh">$ ./bin/pyspark --master local[4]
-$ ./bin/pyspark --master local[4] --py-files code.py
-</code></pre><span id="navId" data="b8687be2-a77b-499e-8765-3e96a96a8422"></span>
-<hr>
-<h2 class="text-delta">Table of contents</h2>
+        <h1 id="powershell"><a aria-hidden="true" class="anchor-heading" href="#powershell"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Powershell</h1>
+<h3 id="command-prompt-basics"><a aria-hidden="true" class="anchor-heading" href="#command-prompt-basics"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Command Prompt basics</h3>
 <ul>
-<li>
-<a href="https://kirubhakaran12.github.io/notes\2caa8a43-61a1-40c1-b89d-0f1652adf59e.html">Databricks</a>
+<li>Pipeline output is string(not real object)
+<pre class="language-sh"><code class="language-sh">dir | sort 
+</code></pre>
 </li>
-<li>
-<a href="https://kirubhakaran12.github.io/notes\71111e3a-d444-457a-8417-6c8a3663a497.html">RDD</a>
-</li>
+<li>CMD has some builtin commands and can call executables</li>
+<li>It can perform fixed set of tasks</li>
 </ul>
+<h3 id="powershell-basics"><a aria-hidden="true" class="anchor-heading" href="#powershell-basics"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Powershell basics</h3>
+<ul>
+<li>Initially called Monad</li>
+<li>Provides an environment for executing live commands and creating powerful scripts</li>
+<li>Built on .NET framework</li>
+<li>It will output objects unlike cmd which outputs strings
+<pre class="language-sh"><code class="language-sh">dir | sort-object -Descending -Property lastwritetime
+</code></pre>
+</li>
+<li>Uses common syntax(verb-noun pair command)
+<pre class="language-sh"><code class="language-sh">get-process
+</code></pre>
+</li>
+<li>Powershell can work on non-windows</li>
+<li>Check PowerShell version
+<pre class="language-sh"><code class="language-sh">Get-Host | Select-Object Version
+$psversiontable
+</code></pre>
+</li>
+<li>PowerShell 5 is the latest</li>
+<li>Future is moving to Powershell Core [6] but only shipped with Nano servers(which can't run .NET framework but on .NET core). It is most sutiable for container which need to be light weight.</li>
+<li>Most PowerShell works on PowerShell core but not all</li>
+</ul><span id="navId" data="173ec008-4ca5-48e4-a37e-ae74cdd299f6"></span>
+
 
 
                 

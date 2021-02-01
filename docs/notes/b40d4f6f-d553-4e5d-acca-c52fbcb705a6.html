@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>Sftp - Dendron</title>
+  <title>Spark - Dendron</title>
   
 
   <link
@@ -41,22 +41,22 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://kirubhakaran12.github.io/notes/13b711d6-9566-4be3-bf33-0be904026451.html">
+<link rel="canonical" href="https://kirubhakaran12.github.io/notes/b40d4f6f-d553-4e5d-acca-c52fbcb705a6.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://kirubhakaran12.github.io/notes/13b711d6-9566-4be3-bf33-0be904026451.html">
+<meta property="og:url" content="https://kirubhakaran12.github.io/notes/b40d4f6f-d553-4e5d-acca-c52fbcb705a6.html">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://kirubhakaran12.github.ioundefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/13b711d6-9566-4be3-bf33-0be904026451.html">
+<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/b40d4f6f-d553-4e5d-acca-c52fbcb705a6.html">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://kirubhakaran12.github.ioundefined">
 
 
-  <meta property="og:title" content="Sftp - Dendron" />
-  <meta name="twitter:title" content="Sftp - Dendron" />
+  <meta property="og:title" content="Spark - Dendron" />
+  <meta name="twitter:title" content="Spark - Dendron" />
   
 </head>
 
@@ -129,7 +129,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io/notes\761e8464-2e3b-4334-832d-9d27a70c42a5.html">Python</a></li><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io/notes\80c6d985-cbac-43ea-a2bc-a3de630e048e.html">Utils</a></li><li class="breadcrumb-nav-list-item">Sftp</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item">Spark</li></ol>
           </nav>
         
       
@@ -145,10 +145,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Sftp">
+    <meta itemprop="headline" content="Spark">
     
-    <meta itemprop="datePublished" content="2021-02-01T23:13:47+00:00">
-    <meta itemprop="dateModified" content="2021-02-01T23:13:47+00:00">
+    <meta itemprop="datePublished" content="2021-02-01T23:16:39+00:00">
+    <meta itemprop="dateModified" content="2021-02-01T23:16:39+00:00">
 
     <div class="page__inner-wrap">
       
@@ -158,20 +158,30 @@
 
         
 
-        <h1 id="sftp"><a aria-hidden="true" class="anchor-heading" href="#sftp"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sftp</h1>
-<p>CnOpts - A connection options object, used for passing extended options to the Connection</p>
-<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> pysftp <span class="token keyword">import</span> CnOpts<span class="token punctuation">,</span> Connection
-connection_opts <span class="token operator">=</span> CnOpts<span class="token punctuation">(</span><span class="token punctuation">)</span>
-connection_opts<span class="token punctuation">.</span>hostkeys <span class="token operator">=</span> <span class="token boolean">None</span>
-conn <span class="token operator">=</span> Connection<span class="token punctuation">(</span>
-        host<span class="token operator">=</span><span class="token string">"&#x3C;hostname>"</span><span class="token punctuation">,</span>
-        username<span class="token operator">=</span><span class="token string">"&#x3C;user>"</span><span class="token punctuation">,</span>
-        password<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">,</span>
-        <span class="token comment">#private_key=private_key_object,</span>
-        cnopts<span class="token operator">=</span>connection_opts<span class="token punctuation">,</span>
-    <span class="token punctuation">)</span>
-</code></pre><span id="navId" data="13b711d6-9566-4be3-bf33-0be904026451"></span>
+        <h1 id="spark"><a aria-hidden="true" class="anchor-heading" href="#spark"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Spark</h1>
+<h3 id="spark-basics"><a aria-hidden="true" class="anchor-heading" href="#spark-basics"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Spark Basics</h3>
+<p><b>SparkContext</b> - tells Spark how to access a cluster
+<b>SparkSparkConfContext</b> - contains information about application</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> pyspark <span class="token keyword">import</span> SparkContext<span class="token punctuation">,</span> SparkConf
 
+conf <span class="token operator">=</span> SparkConf<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>setAppName<span class="token punctuation">(</span>appName<span class="token punctuation">)</span><span class="token punctuation">.</span>setMaster<span class="token punctuation">(</span>master<span class="token punctuation">)</span>
+sc <span class="token operator">=</span> SparkContext<span class="token punctuation">(</span>conf<span class="token operator">=</span>conf<span class="token punctuation">)</span>
+</code></pre>
+<p>master -  Spark, Mesos or YARN cluster URL</p>
+<h3 id="launching-ushing-shell"><a aria-hidden="true" class="anchor-heading" href="#launching-ushing-shell"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Launching ushing shell</h3>
+<pre class="language-sh"><code class="language-sh">$ ./bin/pyspark --master local[4]
+$ ./bin/pyspark --master local[4] --py-files code.py
+</code></pre><span id="navId" data="b40d4f6f-d553-4e5d-acca-c52fbcb705a6"></span>
+<hr>
+<h2 class="text-delta">Table of contents</h2>
+<ul>
+<li>
+<a href="https://kirubhakaran12.github.io/notes\55cf1b3f-70e4-4676-afb5-ef6c3e879a0e.html">Databricks</a>
+</li>
+<li>
+<a href="https://kirubhakaran12.github.io/notes\ff732bcd-2ee6-4ef5-9e52-557073dd7e8c.html">RDD</a>
+</li>
+</ul>
 
 
                 

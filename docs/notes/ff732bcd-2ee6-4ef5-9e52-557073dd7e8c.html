@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>Python - Dendron</title>
+  <title>RDD - Dendron</title>
   
 
   <link
@@ -41,22 +41,22 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<link rel="canonical" href="https://kirubhakaran12.github.io/notes/761e8464-2e3b-4334-832d-9d27a70c42a5.html">
+<link rel="canonical" href="https://kirubhakaran12.github.io/notes/ff732bcd-2ee6-4ef5-9e52-557073dd7e8c.html">
 
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://kirubhakaran12.github.io/notes/761e8464-2e3b-4334-832d-9d27a70c42a5.html">
+<meta property="og:url" content="https://kirubhakaran12.github.io/notes/ff732bcd-2ee6-4ef5-9e52-557073dd7e8c.html">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://kirubhakaran12.github.ioundefined">
 
 <meta name="twitter:card" content="summary">
 
-<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/761e8464-2e3b-4334-832d-9d27a70c42a5.html">
+<meta name="twitter:url" content="https://kirubhakaran12.github.io/notes/ff732bcd-2ee6-4ef5-9e52-557073dd7e8c.html">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://kirubhakaran12.github.ioundefined">
 
 
-  <meta property="og:title" content="Python - Dendron" />
-  <meta name="twitter:title" content="Python - Dendron" />
+  <meta property="og:title" content="RDD - Dendron" />
+  <meta name="twitter:title" content="RDD - Dendron" />
   
 </head>
 
@@ -129,7 +129,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item">Python</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io">Root</a></li><li class="breadcrumb-nav-list-item"><a href="https://kirubhakaran12.github.io/notes\b40d4f6f-d553-4e5d-acca-c52fbcb705a6.html">Spark</a></li><li class="breadcrumb-nav-list-item">RDD</li></ol>
           </nav>
         
       
@@ -145,10 +145,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Python">
+    <meta itemprop="headline" content="RDD">
     
-    <meta itemprop="datePublished" content="2021-02-01T23:13:47+00:00">
-    <meta itemprop="dateModified" content="2021-02-01T23:13:47+00:00">
+    <meta itemprop="datePublished" content="2021-02-01T23:16:39+00:00">
+    <meta itemprop="dateModified" content="2021-02-01T23:16:39+00:00">
 
     <div class="page__inner-wrap">
       
@@ -158,14 +158,24 @@
 
         
 
-        <h1 id="python"><a aria-hidden="true" class="anchor-heading" href="#python"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Python</h1><span id="navId" data="761e8464-2e3b-4334-832d-9d27a70c42a5"></span>
-<hr>
-<h2 class="text-delta">Table of contents</h2>
-<ul>
-<li>
-<a href="https://kirubhakaran12.github.io/notes\80c6d985-cbac-43ea-a2bc-a3de630e048e.html">Utils</a>
-</li>
-</ul>
+        <h1 id="rdd"><a aria-hidden="true" class="anchor-heading" href="#rdd"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>RDD</h1>
+<h4 id="create-rdd"><a aria-hidden="true" class="anchor-heading" href="#create-rdd"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Create RDD</h4>
+<pre class="language-python"><code class="language-python">data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+distData <span class="token operator">=</span> sc<span class="token punctuation">.</span>parallelize<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="loading-external-files"><a aria-hidden="true" class="anchor-heading" href="#loading-external-files"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Loading External Files</h3>
+<pre class="language-python"><code class="language-python">distFile <span class="token operator">=</span> sc<span class="token punctuation">.</span>textFile<span class="token punctuation">(</span><span class="token string">"data.txt"</span><span class="token punctuation">)</span>
+distFile <span class="token operator">=</span> sc<span class="token punctuation">.</span>textFile<span class="token punctuation">(</span><span class="token string">"/my/directory"</span><span class="token punctuation">)</span>
+distFile <span class="token operator">=</span> sc<span class="token punctuation">.</span>textFile<span class="token punctuation">(</span><span class="token string">"/my/directory/*.txt"</span><span class="token punctuation">)</span>
+distFile <span class="token operator">=</span> sc<span class="token punctuation">.</span>textFile<span class="token punctuation">(</span><span class="token string">"/my/directory/*.gz"</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="save-as-sequential-files"><a aria-hidden="true" class="anchor-heading" href="#save-as-sequential-files"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Save as sequential files</h3>
+<pre class="language-python"><code class="language-python">rdd <span class="token operator">=</span> sc<span class="token punctuation">.</span>parallelize<span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token string">"a"</span> <span class="token operator">*</span> x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+rdd<span class="token punctuation">.</span>saveAsSequenceFile<span class="token punctuation">(</span><span class="token string">"path/to/file"</span><span class="token punctuation">)</span>
+<span class="token builtin">sorted</span><span class="token punctuation">(</span>sc<span class="token punctuation">.</span>sequenceFile<span class="token punctuation">(</span><span class="token string">"path/to/file"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>collect<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="operations"><a aria-hidden="true" class="anchor-heading" href="#operations"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Operations</h3><span id="navId" data="ff732bcd-2ee6-4ef5-9e52-557073dd7e8c"></span>
+
 
 
                 
